@@ -1,4 +1,4 @@
-plate-box
+kupi2
 =========
 
-HTML5 boiler plat with bootstrap support and fontawesome support... Included semantic HTML :P
+:P
