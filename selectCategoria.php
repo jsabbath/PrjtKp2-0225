@@ -1,0 +1,27 @@
+<?php  
+ $connect = mysqli_connect("localhost", "root", "", "db_tiendakupidos");  
+ $output = '';  
+ $sql = "SELECT * FROM tbcategoria ORDER BY id ASC";  
+ $result = mysqli_query($connect, $sql);  
+ $output .= '';  
+ if(mysqli_num_rows($result) > 0)  
+ {  
+      while($row = mysqli_fetch_array($result))  
+      {  
+           $output .= '<li class="list-group-item"><a href="catalogkupi2.php?categoria='.$row["nvchname"].'">'.$row["nvchname"].'</a></li>';  
+      }  
+      $output .= '  
+           
+      ';  
+ }  
+ else  
+ {  
+      $output .= '
+            	<div class="alert alert-danger" role="alert">
+          		  <strong>UPPS!!</strong> Aun no tenemos productos.
+          		</div>
+      ';
+ }  
+ $output .= '';  
+ echo $output;  
+ ?>
