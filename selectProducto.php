@@ -11,7 +11,7 @@
            $output .= '  
               <div class="col-md-4">
                 <div class="card">
-                  <img class="card-img-top" src="Kupidos2/uploads/'.$row["nvchimg"].'" alt="Card image cap">
+                  <img class="card-img-top" src="adminkupi2/kupidos2/uploads/'.$row["nvchimg"].'" alt="Card image cap">
                   <div class="card-block">
                     <span class="tag tag-danger">S/. '.$row["nvchprecio"].'</span>
                     <h6 class="card-title">'.$row["nvchname"].'</h6>
@@ -37,7 +37,7 @@
 							<div class="container">
 								<div class="row">
 									<div class="col-md-5">
-							            <img src="Kupidos2/uploads/'.$row["nvchimg"].'" class="" width="400">
+							            <img src="adminkupi2/kupidos2/uploads/'.$row["nvchimg"].'" class="" width="400">
 							            <p class="card-text" style="text-align:left">
 							            	<small><strong>Descripción: </strong></small><br>
 							            	<small>'.$row["nvchdescripcion"].'</small>
