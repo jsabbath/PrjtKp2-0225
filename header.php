@@ -9,6 +9,8 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
     <link rel="icon" type="image/png" href="http://www.uaua.info/pictures_ckfinder/images/%D0%BA%D1%83%D0%BF%D0%B8%D0%B4%D0%BE%D0%BD(4).png" />
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     
@@ -16,10 +18,7 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/ionicons.min.css">
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -30,6 +29,8 @@
     <META NAME="ROBOTS" CONTENT="ALL"> 
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+    
     
     <!-- Js -->
     <script src="js/vendor/modernizr-2.6.2.min.js"></script>
@@ -47,7 +48,7 @@
     </style>
 
     <!-- Google Map -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <!--script src="https://maps.googleapis.com/maps/api/js"></script-->
     <script src="js/google-map-init.js"></script>
 
 
@@ -56,24 +57,42 @@
   
   <body>
   <!-- Header Start -->
-  <header style="height: 80px">
+  <header style="height: 50px">
     <nav class="navbar navbar-default navbar-fixed-top" style="background-color: white;">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="sr-only" style="">Toggle navigation</span>
+            <span class=" glyphicon glyphicon-menu-hamburger" style="width: 50px"></span>
           </button>
-          <a class="navbar-brand" href="index" style="margin-top: 9px">Kupi2</a>
+          <!--a class="navbar-brand" href="index" style="margin-top: 9px">Kupi2</a-->
         </div>
         <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="index">Inicio</a></li>
-            <li><a href="nosotros">Nosotros</a></li>
-            <li><a href="contacto">Contactos</a></li>
-            <li><a href="catalogo">Catalogo</a></li>
+          <ul class="nav navbar-nav" style='margin-top: -5px'>
+            <li class="active">
+              <a href="index">
+                <span class="glyphicon glyphicon-home"></span>
+                Inicio
+              </a>
+            </li>
+            <li>
+              <a href="nosotros">
+                <span class="glyphicon glyphicon-education"></span>
+                Nosotros
+              </a>
+            </li>
+            <li>
+              <a href="contacto">
+                <span class="glyphicon glyphicon-comment"></span>
+                Contáctanos
+              </a>
+            </li>
+            <li>
+              <a href="catalogo">
+                <span class="glyphicon glyphicon-th-list"></span>
+                Catalogo
+              </a>
+            </li>
             <!--li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
@@ -87,11 +106,12 @@
               </ul>
             </li-->
           </ul>
-          <ul class="nav navbar-nav navbar-right">
+          <ul class="nav navbar-nav navbar-right" style='margin-top: -5px'>
             <!--li><a href="../navbar/">Default</a></li>
             <li><a href="../navbar-static-top/">Static top</a></li-->
             <li class="active"><a href="adminkupi2/index.php">
-               Login <span class="sr-only">(current)</span></a>
+               <span class="glyphicon glyphicon-user"></span>
+               Panel Kupi2 <span class="sr-only">(current)</span></a>
             </li>
           </ul>
         </div><!--/.nav-collapse -->

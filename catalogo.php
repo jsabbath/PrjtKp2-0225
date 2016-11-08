@@ -26,8 +26,7 @@
                             <strong>Importante!</strong> Hacer el pedido con mínimo dos días de anticipación, además puedes conseguir algunas ofertas... ;)
                           </div>
                       </small>
-                    
-                      <?php include 'selectProducto.php'; ?>
+                        <?php include 'selectProducto.php'; ?>
                     </ul>
                   </div>
                 </div>

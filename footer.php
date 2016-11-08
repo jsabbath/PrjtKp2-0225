@@ -80,4 +80,9 @@
   header{
     border-bottom: solid 3px #e91e63;
   }
+
+  .glyphicon{
+    margin-top: 5px;
+    padding-right: 5px
+  }
 </style>
