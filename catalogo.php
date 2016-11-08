@@ -72,9 +72,17 @@
 
 <?php include 'footer.php'; ?>
 <script>
+  //script for modal
   $("#pop").on("click", function() {
-     $("#imagepreview").attr("src", $("#imageresource").attr("src")); // here asign the image to the modal when the user click the enlarge link
-     $("#imagemodal").modal("show"); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
+     $("#imagepreview").attr("src", $("#imageresource").attr("src")); 
+     $("#imagemodal").modal("show"); 
   });
   document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 </script>
+
+<!--Script from Disqus -->
+<!--script>
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/60133/script.js');
+</script-->

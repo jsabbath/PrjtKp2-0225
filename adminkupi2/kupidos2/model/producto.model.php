@@ -36,6 +36,7 @@ class ProductoModel
 				INNER JOIN
 				  tbcategoria
 				ON tbproducto.nvchcategoria = tbcategoria.id
+				ORDER BY tbproducto.nvchfecha ASC
 				");
 
 			$stm->execute();
