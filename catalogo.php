@@ -66,11 +66,9 @@
       </div>
     </div>
   </div>
-
 <!-- END Modals -->
     </body>
 </html>
-
 
 <?php include 'footer.php'; ?>
 <script>
@@ -78,6 +76,5 @@
      $("#imagepreview").attr("src", $("#imageresource").attr("src")); // here asign the image to the modal when the user click the enlarge link
      $("#imagemodal").modal("show"); // imagemodal is the id attribute assigned to the bootstrap modal, then i use the show function
   });
-
   document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
 </script>
