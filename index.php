@@ -1,196 +1,88 @@
-<?php 
-  include'header.php'; 
-?>
-<div id="mycarousel" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-  <ol class="carousel-indicators">
-    <li data-target="#mycarousel" data-slide-to="0" class="active"></li>
-    <li data-target="#mycarousel" data-slide-to="1"></li>
-    <li data-target="#mycarousel" data-slide-to="2"></li>
-  </ol>
+<?php include 'header.php'; ?>
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item">
-        <img src="https://images2.alphacoders.com/457/457529.jpg" data-color="lightblue" alt="First Image">
-        <div class="carousel-caption">
-            <h3>First Image</h3>
+    <!-- Portfolio Start -->
+    <section id="portfolio-work">
+        <div class="container">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="container">
+                  <div class="card">
+                    <?php include_once('categoriapanel.php'); ?>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-9">
+                <div class="block">
+                  <div class="portfolio-contant">
+
+                    <ul id="portfolio-contant-active">                  
+                    <!--Alert temporal-->
+                      <small style="text-align:left">
+                          <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                              <span aria-hidden="true">&times;</span>
+                            </button>
+                            <strong>Importante!</strong> Hacer el pedido con mínimo dos días de anticipación, además puedes conseguir algunas ofertas... ;)
+                          </div>
+                      </small>
+                        <?php include 'selectProducto.php'; ?>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-    </div>
-    <div class="item">
-        <img src="http://walops.com/wp-content/uploads/Blue-Rose-HD-Desktop-Background-Wallpaper.jpg" data-color="firebrick" alt="Second Image">
-        <div class="carousel-caption">
-            <h3>Second Image</h3>
+    </section>
+
+<!-- Modals -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="exampleModalLabel">New message</h4>
         </div>
-    </div>
-    <div class="item">
-        <img src="http://img.rjeem.com/imgcache/2013/11/296619.jpg" data-color="violet" alt="Third Image">
-        <div class="carousel-caption">
-            <h3>Third Image</h3>
+        <div class="modal-body">
+          <!--Formulario envio de parametro de busqueda en producto-->
+          <form action="producto?" method="POST">
+            <div class="form-group">
+              <label for="recipient-name" class="form-control-label">Recipient:</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="form-group">
+              <label for="message-text" class="form-control-label">Message:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+          <!--END Formulario envio de parametro de busqueda en producto-->
         </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Send message</button>
+        </div>
+      </div>
     </div>
   </div>
-
-  <!-- Controls -->
-  <a class="left carousel-control" href="#mycarousel" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#mycarousel" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-<style type="text/css">
-    h3 {
-    display: inline-block;
-    padding: 0px;
-    background: #B9121B;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-  }
-  .full-screen {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-  }
-</style>
-
-<script type="text/javascript">
-    var $item = $('.carousel .item'); 
-    var $wHeight = $(window).height();
-    $item.eq(0).addClass('active');
-    $item.height($wHeight); 
-    $item.addClass('full-screen');
-
-    $('.carousel img').each(function() {
-      var $src = $(this).attr('src');
-      var $color = $(this).attr('data-color');
-      $(this).parent().css({
-        'background-image' : 'url(' + $src + ')',
-        'background-color' : $color
-      });
-      $(this).remove();
-    });
-
-    $(window).on('resize', function (){
-      $wHeight = $(window).height();
-      $item.height($wHeight);
-    });
-
-    $('.carousel').carousel({
-      interval: 6000,
-      pause: "false"
-    });
-</script>
-
-
-
-    <!-- Wrapper Start -->
-    <section id="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-7 col-sm-12">
-            <div class="block">
-              <div class="section-title">
-                <h2>About Us</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-              </div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id </p>
-            </div>
-          </div><!-- .col-md-7 close -->
-          <div class="col-md-5 col-sm-12">
-            <div class="block">
-              <img src="img/wrapper-img.png" alt="Img">
-            </div>
-          </div><!-- .col-md-5 close -->
-        </div>
-      </div>
-    </section>
-
-  <section id="feature">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-6">
-          <h2>WE BELIEVE IN GREAT IDEAS</h2>
-          <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p>Maecenas faucibus mollis interdum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <a href="#" class="btn btn-view-works">View Works</a>
-        </div>
-      </div>
-    </div>
-  </section>
-        
-    <!-- Service Start -->
-    <section id="service">
-      <div class="container">
-        <div class="row">
-          <div class="section-title">
-            <h2>Our Services</h2>
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics</p>
-          </div>
-        </div>
-        <div class="row ">
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="icon ion-coffee"></i>
-              <h4>Branding</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-compass"></i>
-              <h4>Web Design</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-image"></i>
-              <h4>App Design</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-bug"></i>
-              <h4>Start Up</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-headphone"></i>
-              <h4>Logo Design</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-leaf"></i>
-              <h4>Development</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-planet"></i>
-              <h4>Brand Identity</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-3">
-            <div class="service-item">
-              <i class="ion-earth"></i>
-              <h4>Brand Identity</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
+<!-- END Modals -->
+    </body>
+</html>
 
 <?php include 'footer.php'; ?>
+<script>
+  //script for modal
+  $("#pop").on("click", function() {
+     $("#imagepreview").attr("src", $("#imageresource").attr("src")); 
+     $("#imagemodal").modal("show"); 
+  });
+  document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')
+</script>
+
+<!--Script from Disqus -->
+<!--script>
+  (function (w,i,d,g,e,t,s) {w[d] = w[d]||[];t= i.createElement(g);
+    t.async=1;t.src=e;s=i.getElementsByTagName(g)[0];s.parentNode.insertBefore(t, s);
+  })(window, document, '_gscq','script','//widgets.getsitecontrol.com/60133/script.js');
+</script-->
