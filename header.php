@@ -82,7 +82,7 @@
               </a>
             </li>
             <li>
-              <a href="contacto">
+              <a href="contact">
                 <span class="glyphicon glyphicon-comment"></span>
                 Contáctanos
               </a>
