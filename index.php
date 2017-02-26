@@ -1,18 +1,8 @@
-<?php include 'header.php'; ?>
+<?php include 'Kp2_Assets/header.php'; ?>
 
-  <section class="bannerkupidos">
-  </section>
-  <style type="text/css">
-    .bannerkupidos{
-      background-image: url("img/Kupidos.JPG");
-      background-position: center top;
-      background-size: 100% auto;
-    }
-    @media screen and (max-width:400px){
-      
-    }
-  </style>
-
+<div>
+  <img src="Kp2_Assets/img/KupidosBanner-Corel.jpg" width="100%">
+</div>
 
 
     <!-- Portfolio Start -->
@@ -22,7 +12,7 @@
               <div class="col-md-3">
                 <div class="container">
                   <div class="card">
-                    <?php include_once('categoriapanel.php'); ?>
+                    <?php include_once('Kp2_Assets/categoriapanel.php'); ?>
                   </div>
                 </div>
               </div>
@@ -41,7 +31,7 @@
                             <strong>Importante!</strong> Hacer el pedido con mínimo dos días de anticipación, además puedes conseguir algunas ofertas... ;)
                           </div>
                       </small>
-                        <?php include 'selectProducto.php'; ?>
+                        <?php include 'Kp2_Assets/selectProducto.php'; ?>
                     </ul>
                   </div>
                 </div>
@@ -85,7 +75,7 @@
     </body>
 </html>
 
-<?php include 'footer.php'; ?>
+<?php include 'Kp2_Assets/footer.php'; ?>
 <script>
   //script for modal
   $("#pop").on("click", function() {

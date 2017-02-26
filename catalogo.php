@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'Kp2_Assets/header.php'; ?>
 
     <!-- Portfolio Start -->
     <section id="portfolio-work">
@@ -70,7 +70,7 @@
     </body>
 </html>
 
-<?php include 'footer.php'; ?>
+<?php include 'Kp2_Assets/footer.php'; ?>
 <script>
   //script for modal
   $("#pop").on("click", function() {

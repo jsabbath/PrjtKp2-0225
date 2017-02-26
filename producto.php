@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'Kp2_Assets/header.php'; ?>
 
     <!-- Portfolio Start -->
     <section id="portfolio-work">
@@ -177,7 +177,7 @@
 </html>
 
 
-<?php include 'footer.php'; ?>
+<?php include 'Kp2_Assets/footer.php'; ?>
 <script>
   $("#pop").on("click", function() {
      $("#imagepreview").attr("src", $("#imageresource").attr("src")); // here asign the image to the modal when the user click the enlarge link

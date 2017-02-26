@@ -15,16 +15,16 @@
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     
     <!-- CSS -->
-    <link rel="stylesheet" href="css/owl.carousel.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/style.css">>
+    <link rel="stylesheet" href="Kp2_Assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="Kp2_Assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Kp2_Assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Kp2_Assets/css/style.css">>
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <META NAME="GOOGLEBOT" CONTENT="NOARCHIVE">
     <meta name="author" content="">
-    <link rel="icon" type="image/png" href="img/logoha.png" />
+    <link rel="icon" type="image/png" href="Kp2_Assets/img/logoha.png" />
     <meta name="viewport" content="width=device-width, user-scalable=no">
     <META NAME="ROBOTS" CONTENT="ALL"> 
 
@@ -38,10 +38,10 @@
 
     <!-- Google Map -->
     <!--script src="https://maps.googleapis.com/maps/api/js"></script-->
-    <script src="js/google-map-init.js"></script>
+    <script src="Kp2_Assets/js/google-map-init.js"></script>
 
 
-    <script src="js/main.js"></script>
+    <script src="Kp2_Assets/js/main.js"></script>
   </head>
   
   <body>
@@ -59,19 +59,19 @@
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav" style='margin-top: -5px'>
             <li class="active">
-              <a href="index">
+              <a href="index.php">
                 <span class="glyphicon glyphicon-home"></span>
                 Inicio
               </a>
             </li>
             <li>
-              <a href="nosotros">
+              <a href="">
                 <span class="glyphicon glyphicon-education"></span>
                 Nosotros
               </a>
             </li>
             <li>
-              <a href="contacto">
+              <a href="contacto.php">
                 <span class="glyphicon glyphicon-comment"></span>
                 Contáctanos
               </a>

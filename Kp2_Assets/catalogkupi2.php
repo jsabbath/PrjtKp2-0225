@@ -23,7 +23,7 @@
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
-                            <strong>Importante!</strong> Hacer el pedido con mínimo dos días de anticipación, además puedes conseguir algunas ofertas... ;)
+                            <strong>Importante!</strong> Realiza tu pedido con anticipación y consigue ofertas... ;)
                           </div>
                       </small>
                     

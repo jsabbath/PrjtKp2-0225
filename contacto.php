@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'Kp2_Assets/header.php'; ?>
         
         <!-- Slider Start -->
         <!--section id="global-header">
@@ -195,4 +195,4 @@
           </div>
         </section>
 
-<?php include 'footer.php'; ?>
+<?php include 'Kp2_Assets/footer.php'; ?>

@@ -57,7 +57,7 @@
     <script type="text/javascript" src="js/snow.js"></script> <!--pra coracoes-->
     <script type="text/javascript">
     $(function() {
-        $(document).snow({ SnowImage: "img/cor7.png" });
+        $(document).snow({ SnowImage: "Kp2_Assets/img/cor7.png" });
     });
     </script>
     
