@@ -1,5 +1,20 @@
 <?php include 'header.php'; ?>
 
+  <section class="bannerkupidos">
+  </section>
+  <style type="text/css">
+    .bannerkupidos{
+      background-image: url("img/Kupidos.JPG");
+      background-position: center top;
+      background-size: 100% auto;
+    }
+    @media screen and (max-width:400px){
+      
+    }
+  </style>
+
+
+
     <!-- Portfolio Start -->
     <section id="portfolio-work">
         <div class="container">

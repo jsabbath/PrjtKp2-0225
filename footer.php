@@ -5,8 +5,7 @@
         <div class="col-md-12">
           <div class="block">
             <h2>Kupi2, Flores y detalles.</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt tempore animi sit hic laudantium placeat nihil obcaecati asperiores itaque cum, quasi, impedit eligendi. Dolorem non ducimus dicta cumque provident esse!.
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque enim deleniti aliquid rerum ab placeat quae, voluptates fuga, eum quibusdam ipsa excepturi voluptatum cum in itaque dolore recusandae ratione saepe!
+            <p>Contamos con las mejores flores del mercado, viniendo directamente de cultivos ubicados en Colombia y Holanda, donde son cortadas y enviadas a nuestro local, no antes garantizando que nuestras flores siempre sean frescas y puedan ofrecer una duración mucho mayor a la del promedio del mercado. 
             </p>
             <a class="btn btn-default btn-call-to-action" href="#" >Contáctanos</a>
           </div>
@@ -41,7 +40,26 @@
   </footer>
 
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-            
+
+
+
+
+    <!-- Js -->
+    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/min/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.js"></script>
+
+    <script type="text/javascript" src="js/snow.js"></script> <!--pra coracoes-->
+    <script type="text/javascript">
+    $(function() {
+        $(document).snow({ SnowImage: "img/cor7.png" });
+    });
+    </script>
     
     </body>
 </html>

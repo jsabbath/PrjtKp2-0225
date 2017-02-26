@@ -4,6 +4,6 @@
   <li class="list-group-item">
    <input class='' type="text" name="" placeholder="Buscar..." style="padding: 3px; margin:0 auto;">
   </li>
-  <li class="list-group-item"><a href="catalogo">Ver Todos</a></li>
+  <li class="list-group-item"><a href="index.php">Ver Todos</a></li>
   <?php include 'selectCategoria.php'; ?>
 </ul>

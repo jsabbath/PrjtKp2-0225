@@ -30,17 +30,6 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
 
-    
-    
-    <!-- Js -->
-    <script src="js/vendor/modernizr-2.6.2.min.js"></script>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/min/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.js"></script>
 
     <!-- Google Fonts -->
     <style>
@@ -87,12 +76,12 @@
                 Contáctanos
               </a>
             </li>
-            <li>
+            <!--li>
               <a href="catalogo">
                 <span class="glyphicon glyphicon-th-list"></span>
                 Catalogo
               </a>
-            </li>
+            </li-->
             <!--li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu">
