@@ -1,5 +1,6 @@
 <?php  
  $connect = mysqli_connect("localhost", "root", "", "db_tiendakupidos");  
+ //$connect = mysqli_connect("dbtiendakupidos.db.9941338.hostedresource.com", "dbtiendakupidos", "kupiDos@devH12", "dbtiendakupidos");  
  $output = '';  
  $sql = "SELECT * FROM tbcategoria ORDER BY id ASC";  
  $result = mysqli_query($connect, $sql);  
