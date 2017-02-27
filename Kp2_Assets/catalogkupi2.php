@@ -19,11 +19,13 @@
                     <ul id="portfolio-contant-active">                  
                     <!--Alert temporal-->
                       <small style="text-align:left">
-                          <div class="alert alert-danger alert-dismissible fade in" role="alert">
+                          <div class="alert alert-warning alert-dismissible fade in" role="alert">
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
-                            <strong>Importante!</strong> Realiza tu pedido con anticipación y consigue ofertas... ;)
+                            <strong>Importante!</strong> <br>
+                            1.- Puedes ver más productos pulsando en la categoria correspondiente a tu busqueda. <br>
+                            2.- Realiza tu pedido con anticipación y consigue ofertas... ;)
                           </div>
                       </small>
                     
@@ -141,8 +143,8 @@
 	 else  
 	 {  
 	      $output .= '
-	      	<div class="alert alert-warning" role="alert">
-			  <strong>UPPS!!</strong> Al parecer aun no tenemos productos registrados en esta categoria.
+	      	<div class="alert alert-danger" role="alert">
+			  <strong>UPPS!!</strong> Aun no tenemos productos con esta categiria, pero aun tenemos mas categorías :).
 			</div>
 	      ';  
 	 }  

@@ -1,8 +1,9 @@
 <?php  
+
  $connect = mysqli_connect("localhost", "root", "", "db_tiendakupidos");  
  //$connect = mysqli_connect("dbtiendakupidos.db.9941338.hostedresource.com", "dbtiendakupidos", "kupiDos@devH12", "dbtiendakupidos");  
  $output = '';  
- $sql = "SELECT * FROM tbproducto ORDER BY id ASC";  
+ $sql = "SELECT * FROM tbproducto ORDER BY id ASC limit 12";  
  $result = mysqli_query($connect, $sql);  
  $output .= ' ';  
  if(mysqli_num_rows($result) > 0)  
@@ -94,7 +95,7 @@
  {  
       $output .= '
       	<div class="alert alert-danger" role="alert">
-		  <strong>UPPS!!</strong> Aun no tenemos productos.
+		  <strong>UPPS!!</strong> Aun no tenemos productos con esta categiria, pero aun tenemos mas categorías :).
 		</div>
       ';  
  }  
@@ -102,5 +103,6 @@
     </tbody>
     </table>  
       </div>';  
+
  echo $output;  
  ?>
