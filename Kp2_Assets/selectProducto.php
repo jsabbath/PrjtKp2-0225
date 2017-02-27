@@ -147,7 +147,7 @@
 				{
 					if($i == 1)
 					{
-						if($pag != 0)
+						if($Paginacion != 1)
 						{
 							echo '<li><a href="index.php?page='.($Paginacion-1).'">&laquo;</a></li>';
 		               		echo '<li><a href="index.php?page='.$i.'">'.$i.'</a></li>';
@@ -162,7 +162,7 @@
 					{
 						if($i == $CantidadPaginas)
 						{
-							if($pag != $CantidadPaginas - 1)
+							if($Paginacion != $CantidadPaginas)
 							{
 			               		echo '<li><a href="index.php?page='.$i.'">'.$i.'</a></li>';
 			               		echo '<li><a href="index.php?page='.($Paginacion+1).'">&raquo;</a></li>';
