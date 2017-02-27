@@ -1,10 +1,39 @@
 <?php  
 
  $connect = mysqli_connect("localhost", "root", "", "db_tiendakupidos");  
- //$connect = mysqli_connect("dbtiendakupidos.db.9941338.hostedresource.com", "dbtiendakupidos", "kupiDos@devH12", "dbtiendakupidos");  
+ //$connect = mysqli_connect("dbtiendakupidos.db.9941338.hostedresource.com", "dbtiendakupidos", "kupiDos@devH12", "dbtiendakupidos");
+
+ //Autor: Héctor Vivanco - Fecha: 27/02/2017
+ //Permite listar los productos en orden y paginado
+ //INI-MODIFICACION-1
+  if(!empty($_GET['page'])){ 
+		$Paginacion = $_GET['page'];
+		$pag = $_GET['page'];
+		$pag = ($pag-1)*12;
+	}else{ 
+		$Paginacion = 2;
+	    $pag = 0; 
+	}
  $output = '';  
- $sql = "SELECT * FROM tbproducto ORDER BY id ASC limit 12";  
- $result = mysqli_query($connect, $sql);  
+ $sql = "SELECT * FROM tbproducto ORDER BY id ASC limit ".$pag." , 12";  
+ $result = mysqli_query($connect, $sql);
+
+ $SqlContador = "SELECT count(*) FROM tbproducto";
+ $ResultadoContador = mysqli_query($connect, $SqlContador);
+ if(mysqli_num_rows($ResultadoContador) > 0)  
+ {  
+      while($row = mysqli_fetch_array($ResultadoContador))  
+      {
+      		$CantidadProductos = $row[0];
+      }
+ } 
+ $ResultadoPaginas = $CantidadProductos / 12;
+ $CantidadPaginas = floor($ResultadoPaginas);
+ $RestoProductos = $CantidadProductos / 12;
+ if($RestoProductos > 0)
+ 	$CantidadPaginas = $CantidadPaginas + 1;
+ //FIN-MODIFICACION-1
+
  $output .= ' ';  
  if(mysqli_num_rows($result) > 0)  
  {  
@@ -23,9 +52,6 @@
 					<button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#'.$row["id"].'">
 						Ver Detalles
 					</button>
-
-					<div class="fb-like" data-href="https://www.kupi2.com/product/'.$row["id"].'" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-					
                   </div>
 
 				<!--Modal que recibe parametro id con la imagen-->
@@ -36,10 +62,7 @@
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
-					        <h5 class="modal-title">
-					        	'.$row["nvchname"].' - S/.'.$row["nvchprecio"].' 
-					        	<div class="fb-like" data-href="https://www.kupi2.com/product/'.$row["id"].'" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
-					        </h5>
+					        <h5 class="modal-title">'.$row["nvchname"].' - S/.'.$row["nvchprecio"].'</h5>
 				      	</div>
 					    <div class="modal-body">
 							<div class="container">
@@ -95,7 +118,7 @@
                 <td id="last_name" contenteditable></td>  
                 <td><button type="button" name="btn_add" id="btn_add" class="btn btn-xs btn-success">Agregar</button></td>  
            </tr-->  
-      ';  
+      ';
  }  
  else  
  {  
@@ -110,14 +133,51 @@
     </table>  
       </div>';  
 
- echo $output;  
+ echo $output;
+ //Autor: Héctor Vivanco - Fecha: 27/02/2017
+ //Permite listar los productos en orden y paginado
+ //INI-MODIFICACION-2
+ echo '<br>';
+      echo '<div class="container-fluid">
+		<br>
+		<nav>
+			<ul class="pagination pagination-lg">';
+				for($i = 1 ; $i <= $CantidadPaginas ;$i++)
+				{
+					if($i == 1)
+					{
+						if($pag != 0)
+						{
+							echo '<li><a href="index.php?page='.($Paginacion-1).'">&laquo;</a></li>';
+		               		echo '<li><a href="index.php?page='.$i.'">'.$i.'</a></li>';
+		               	}
+			            else
+			            { 
+			            	echo '<li class="disabled"><a href="#">&laquo;</a></li>';
+			                echo '<li class="active"><a href="#">'.$i.'</a></li>';
+			            }
+					}
+					else
+					{
+						if($i == $CantidadPaginas)
+						{
+							if($pag != $CantidadPaginas - 1)
+							{
+			               		echo '<li><a href="index.php?page='.$i.'">'.$i.'</a></li>';
+			               		echo '<li><a href="index.php?page='.($Paginacion+1).'">&raquo;</a></li>';
+			               	}
+				            else
+				            { 
+				                echo '<li class="active"><a href="#">'.$i.'</a></li>';
+				                echo '<li class="disabled"><a href="#">&raquo;</a></li>';
+				            }
+						}
+						else
+							echo '<li><a href="index.php?page='.$i.'">'.$i.'</a></li>';
+					}
+				}
+echo			'</ul>
+		</nav>';
+echo '<br>';
+//FIN-MODIFICACION-2
  ?>
-
- 	<div id="fb-root"></div>
-	<script>(function(d, s, id) {
-	  var js, fjs = d.getElementsByTagName(s)[0];
-	  if (d.getElementById(id)) return;
-	  js = d.createElement(s); js.id = id;
-	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=1396296787079032";
-	  fjs.parentNode.insertBefore(js, fjs);
-	}(document, 'script', 'facebook-jssdk'));</script>
