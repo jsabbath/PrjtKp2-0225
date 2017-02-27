@@ -35,6 +35,7 @@
 					        </button>
 					        <h5 class="modal-title">
 					        	'.$row["nvchname"].' - S/.'.$row["nvchprecio"].'
+					        	<div class="fb-like" data-href="https://www.kupi2.com/product/'.$row["id"].'" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 					        </h5>
 				      	</div>
 					    <div class="modal-body">
