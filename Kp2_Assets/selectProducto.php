@@ -11,7 +11,7 @@
 		$pag = $_GET['page'];
 		$pag = ($pag-1)*12;
 	}else{ 
-		$Paginacion = 2;
+		$Paginacion = 1;
 	    $pag = 0; 
 	}
  $output = '';  
