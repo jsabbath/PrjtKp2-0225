@@ -14,20 +14,9 @@
                     <?php include_once('Kp2_Assets/categoriapanel.php'); ?>
                   </div>
 
-                  <div class="card">
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=1396296787079032";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-
-<div class="fb-page" data-href="https://www.facebook.com/Kupi2-104758876271450/" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Kupi2-104758876271450/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Kupi2-104758876271450/">Kupi2</a></blockquote></div>
-
+                  <div class="card" id="SocialMediaFBKupidos">
+                      <div id="fb-root"></div>
+                      <div class="fb-page" data-href="https://www.facebook.com/Kupi2-104758876271450/" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Kupi2-104758876271450/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Kupi2-104758876271450/">Kupi2</a></blockquote></div>
                   </div>
 
                 </div>

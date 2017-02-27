@@ -61,6 +61,16 @@
     });
     </script>
     
+
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return;
+      js = d.createElement(s); js.id = id;
+      js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=1396296787079032";
+      fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+
+
     </body>
 </html>
 
@@ -103,4 +113,22 @@
     margin-top: 5px;
     padding-right: 5px
   }
+
+  @media screen and (max-width: 480px){
+    #list{
+      display: none;
+    }
+    #SocialMediaFBKupidos{
+      display: none;
+    }
+  }
+  @media screen and (min-width: 480px){
+    #list{
+      display: block;
+    }
+    #SocialMediaFBKupidos{
+      display: block;
+    }
+  }
 </style>
+
