@@ -33,7 +33,9 @@
 					        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 					          <span aria-hidden="true">&times;</span>
 					        </button>
-					        <h5 class="modal-title">'.$row["nvchname"].' - S/.'.$row["nvchprecio"].'</h5>
+					        <h5 class="modal-title">
+					        	'.$row["nvchname"].' - S/.'.$row["nvchprecio"].'
+					        </h5>
 				      	</div>
 					    <div class="modal-body">
 							<div class="container">
@@ -106,3 +108,12 @@
 
  echo $output;  
  ?>
+
+ 	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+	  var js, fjs = d.getElementsByTagName(s)[0];
+	  if (d.getElementById(id)) return;
+	  js = d.createElement(s); js.id = id;
+	  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=1396296787079032";
+	  fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
