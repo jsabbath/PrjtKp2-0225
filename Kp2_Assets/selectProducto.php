@@ -23,6 +23,9 @@
 					<button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#'.$row["id"].'">
 						Ver Detalles
 					</button>
+
+					<div class="fb-like" data-href="https://www.kupi2.com/product/'.$row["id"].'" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
+					
                   </div>
 
 				<!--Modal que recibe parametro id con la imagen-->
@@ -34,7 +37,7 @@
 					          <span aria-hidden="true">&times;</span>
 					        </button>
 					        <h5 class="modal-title">
-					        	'.$row["nvchname"].' - S/.'.$row["nvchprecio"].'
+					        	'.$row["nvchname"].' - S/.'.$row["nvchprecio"].' 
 					        	<div class="fb-like" data-href="https://www.kupi2.com/product/'.$row["id"].'" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 					        </h5>
 				      	</div>
