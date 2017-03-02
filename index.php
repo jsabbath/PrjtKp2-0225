@@ -13,12 +13,9 @@
                   <div class="card">
                     <?php include_once('Kp2_Assets/categoriapanel.php'); ?>
                   </div>
-
                   <div class="card" id="SocialMediaFBKupidos">
-                      <div id="fb-root"></div>
-                      <div class="fb-page" data-href="https://www.facebook.com/Kupi2-104758876271450/" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Kupi2-104758876271450/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Kupi2-104758876271450/">Kupi2</a></blockquote></div>
+                    <div class="fb-page" data-href="https://www.facebook.com/Kupi2-104758876271450/" data-tabs="timeline" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Kupi2-104758876271450/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Kupi2-104758876271450/">Kupi2</a></blockquote></div>
                   </div>
-
                 </div>
               </div>
 
@@ -32,9 +29,10 @@
                             <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                               <span aria-hidden="true">&times;</span>
                             </button>
-                            <strong>Importante!</strong> <br>
+                            <strong>Recomendaciones!</strong> <br>
                             1.- Puedes ver más productos pulsando en la categoria correspondiente a tu busqueda. <br>
-                            2.- Realiza tu pedido con anticipación y consigue ofertas... ;)
+                            2.- Puedes enviar el catálogo a tus amig@s pulsando en el botón "Enviar"<br>
+                            3.- Realiza tu pedido con anticipación y consigue ofertas... ;)
                           </div>
                       </small>
                         <?php include 'Kp2_Assets/selectProducto.php'; ?>
@@ -46,38 +44,7 @@
         </div>
     </section>
 
-<!-- Modals -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title" id="exampleModalLabel">New message</h4>
-        </div>
-        <div class="modal-body">
-          <!--Formulario envio de parametro de busqueda en producto-->
-          <form action="producto?" method="POST">
-            <div class="form-group">
-              <label for="recipient-name" class="form-control-label">Recipient:</label>
-              <input type="text" class="form-control" id="recipient-name">
-            </div>
-            <div class="form-group">
-              <label for="message-text" class="form-control-label">Message:</label>
-              <textarea class="form-control" id="message-text"></textarea>
-            </div>
-          </form>
-          <!--END Formulario envio de parametro de busqueda en producto-->
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Send message</button>
-        </div>
-      </div>
-    </div>
-  </div>
-<!-- END Modals -->
+
     </body>
 </html>
 
