@@ -1,4 +1,4 @@
-<?php include 'header.php'; ?>
+<?php include 'Kp2_Assets/header.php'; ?>
 
     <!-- Portfolio Start -->
     <section id="portfolio-work">
@@ -7,7 +7,11 @@
               <div class="col-md-3">
                 <div class="container">
                   <div class="card">
-					<?php include_once('categoriapanel.php'); ?>
+					<?php include_once('Kp2_Assets/categoriapanel.php'); ?>
+                  </div>
+                  <div class="card" id="SocialMediaFBKupidos">
+                      <div id="fb-root"></div>
+                      <div class="fb-page" data-href="https://www.facebook.com/Kupi2-104758876271450/" data-tabs="timeline" data-height="400" data-small-header="true" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Kupi2-104758876271450/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Kupi2-104758876271450/">Kupi2</a></blockquote></div>
                   </div>
                 </div>
               </div>
@@ -72,6 +76,7 @@
 						<button type="button" class="btn btn-outline-info btn-sm" data-toggle="modal" data-target="#'.$row["id"].'">
 							Ver Detalles
 						</button>
+						<div class="fb-like" data-href="https://www.kupi2.com/product/'.$row["id"].'" data-layout="button_count" data-action="like" data-size="small" data-show-faces="true" data-share="false"></div>
 	                  </div>
 
 					<!--Modal que recibe parametro id con la imagen-->
@@ -103,15 +108,6 @@
 								            </small>
 										</div>
 										<div class="col-md-7">
-								            <script>
-											  (function(d, s, id) {
-											    var js, fjs = d.getElementsByTagName(s)[0];
-											    if (d.getElementById(id)) return;
-											    js = d.createElement(s); js.id = id;
-											    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
-											    fjs.parentNode.insertBefore(js, fjs);
-											  }(document, "script", "facebook-jssdk"));
-											</script>
 											<div class="fb-comments" data-href="www.kupi2.com/product/'.$row["id"].'" data-numposts="3" width="auto">
 											</div>
 										</div>
@@ -166,7 +162,7 @@
 </html>
 
 
-<?php include 'footer.php'; ?>
+<?php include 'Kp2_Assets/footer.php'; ?>
 <script>
   $("#pop").on("click", function() {
      $("#imagepreview").attr("src", $("#imageresource").attr("src")); // here asign the image to the modal when the user click the enlarge link

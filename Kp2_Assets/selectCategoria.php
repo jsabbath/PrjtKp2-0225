@@ -9,7 +9,7 @@
  {  
       while($row = mysqli_fetch_array($result))  
       {  
-           $output .= '<li class="list-group-item"><a href="catalogkupi2.php?categoria='.$row["nvchname"].'">'.$row["nvchname"].'</a></li>';  
+           $output .= '<li class="list-group-item"><a href="catalogkupi2.php?categoria='.$row["nvchname"].'">'.$row["nvchname"].'</a></li>';
       }  
       $output .= '  
            

@@ -84,15 +84,6 @@
 							            </small>
 									</div>
 									<div class="col-md-7">
-							            <script>
-										  (function(d, s, id) {
-										    var js, fjs = d.getElementsByTagName(s)[0];
-										    if (d.getElementById(id)) return;
-										    js = d.createElement(s); js.id = id;
-										    js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
-										    fjs.parentNode.insertBefore(js, fjs);
-										  }(document, "script", "facebook-jssdk"));
-										</script>
 										<div class="fb-comments" data-href="www.kupi2.com/product/'.$row["id"].'" data-numposts="3" width="auto">
 										</div>
 									</div>
@@ -132,7 +123,8 @@
  $output .= '
     </tbody>
     </table>  
-      </div>';  
+      </div>
+      <br>';  
 
  echo $output;
  //Autor: Héctor Vivanco - Fecha: 27/02/2017

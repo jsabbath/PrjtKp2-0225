@@ -49,7 +49,6 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
     <script src="Kp2_Assets/js/bootstrap.min.js"></script>
-    <script src="Kp2_Assets/js/owl.carousel.min.js"></script>
     <script src="Kp2_Assets/js/plugins.js"></script>
     <script src="Kp2_Assets/js/min/waypoints.min.js"></script>
     <script src="Kp2_Assets/js/jquery.counterup.js"></script>
@@ -71,21 +70,19 @@
     }(document, 'script', 'facebook-jssdk'));</script>
 
 
+    <script>
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/es_LA/sdk.js#xfbml=1&version=v2.6";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, "script", "facebook-jssdk"));
+    </script>
+
+
     </body>
 </html>
-
-<!--EXTRA-->
-<script>
-  $('#myModal').modal(options)
-//refrescar pagina con js
-  /*(function(){
-    setInterval(
-      function(){
-        document.location.reload()
-      },3000)
-      })()
-  */
-</script>
 
 <style type="text/css">
   .LogoLetter, .txtfooter{
