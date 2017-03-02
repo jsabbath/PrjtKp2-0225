@@ -59,8 +59,6 @@
         $(document).snow({ SnowImage: "Kp2_Assets/img/cor7.png" });
     });
     </script>
-    
-
     <script>(function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
@@ -68,8 +66,6 @@
       js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.8&appId=1396296787079032";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
-
     <script>
       (function(d, s, id) {
         var js, fjs = d.getElementsByTagName(s)[0];
@@ -79,9 +75,127 @@
         fjs.parentNode.insertBefore(js, fjs);
       }(document, "script", "facebook-jssdk"));
     </script>
-
-
     </body>
+
+
+
+<!--boton flotante pagamento-->
+<div class="buttonfloatbottom" onclick="myFunction1()">
+    <a href="#home" id="buttoninfo">MÉTODO DE PAGO <img src="http://www.emacs.es/media/img/estructura/flecha-circulo-gris-arriba.png" alt="" width="20px"/></a> 
+</div>
+  
+<div id="info">
+  <div onclick="myFunction2()" class="cabezainfo" style="">
+    MÉTODO DE PAGO
+    <img src="http://www.emacs.es/media/img/estructura/flecha-circulo-gris-arriba.png" alt="" width="20px" style="margin-bottom:-3px; right:0; margin-left:80px;" class="icondown"/>
+  </div>
+  <div style="padding: 5px 10px 5px 20px" id="infopago">
+      <ul>
+        <li>
+          <strong>Caja Huancayo: </strong><br>
+          1070-0221-1004-1651-44
+        </li>
+        <li>
+          <strong>Interbank: </strong><br>
+          500-3050051-789
+        </li>
+        <li>
+          <strong>Banco de la Nación: </strong><br>
+          04-388-292828
+        </li>
+        <li>
+          <strong>Banco de Crédito BCP: </strong><br>
+          355-20830262-005
+        </li>
+        <li>
+          <strong>Banco Continental: </strong><br>
+          0011-0235-0201-060921
+        </li>
+      </ul>
+  </div>
+</div>
+<style>
+.icondown{
+  transform : rotate(180deg);
+  -moz-transform : rotate(180deg); /* Firefox */
+  -webkit-transform : rotate(180deg); /* Chrome - Safari */
+  -o-transform : rotate(180deg); /* Opera */
+}
+.buttonfloatbottom{
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    margin: 0;
+    padding: 7px 25px 7px 25px;
+    overflow: hidden;
+    background-color: dodgerblue;
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+    cursor:pointer;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15), 0 3px 1px -2px rgba(0, 0, 0, .20), 0 1px 5px 0 rgba(0, 0, 0, .12);
+    border-radius: 3px 3px 0px 0px;
+}
+.buttonfloatbottom a{
+  color:white;
+  margin-bottom:-3px; 
+  right:0; 
+  margin-left:0px;
+}
+#info {
+    margin: 0;
+    
+    overflow: hidden;
+    
+    position: fixed;
+    bottom: 0;
+    right: 10px;
+  
+    height: 320px;
+    width:270px;
+    
+    background-color: white;
+    border: solid 1px hsla(207, 90%, 54%, 0.5)
+    color:grey;
+    text-align: left;
+    
+    border-radius: 3px 3px 0px 0px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15), 0 3px 1px -2px rgba(0, 0, 0, .20), 0 1px 5px 0 rgba(0, 0, 0, .12);
+  
+    display: none;
+}
+.cabezainfo{
+  background-color: dodgerblue; 
+  color:white; 
+  padding: 10px 15px 10px 15px; 
+  width:100%;
+  cursor:pointer;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .15), 0 3px 1px -2px rgba(0, 0, 0, .20), 0 1px 5px 0 rgba(0, 0, 0, .12);
+}
+
+</style>
+<script>
+  function myFunction1() {
+    var x = document.getElementById('info');
+    if (x.style.display === 'none') {
+        x.style.display = 'block';
+    } else {
+        x.style.display = 'none';
+    }
+}
+
+function myFunction2() {
+    var x = document.getElementById('info');
+    if (x.style.display === 'block') {
+        x.style.display = 'none';
+    } else {
+        x.style.display = 'block';
+    }
+}
+</script>
+<!--END boton flotante pagamento-->
+
+
+
+
 </html>
 
 <style type="text/css">
@@ -128,4 +242,3 @@
     }
   }
 </style>
-

@@ -14,8 +14,12 @@
     
     <!-- CSS -->
     <link rel="stylesheet" href="Kp2_Assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="Kp2_Assets/css/font-awesome.min.css">
-    <link rel="stylesheet" href="Kp2_Assets/css/style.css">>
+    <link rel="stylesheet" href="Kp2_Assets/css/style.css">
+
+
+    <!--Metas para cache-->
+    <!--END Metas para cache-->
+
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -44,26 +48,22 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only" style="">Toggle navigation</span>
-            <span class=" glyphicon glyphicon-menu-hamburger" style="width: 50px"></span>
           </button>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav" style='margin-top: -5px'>
             <li class="active">
               <a href="index.php">
-                <span class="glyphicon glyphicon-home"></span>
                 Inicio
               </a>
             </li>
             <li>
               <a href="">
-                <span class="glyphicon glyphicon-education"></span>
                 Nosotros
               </a>
             </li>
             <li>
               <a href="contacto.php">
-                <span class="glyphicon glyphicon-comment"></span>
                 Contáctanos
               </a>
             </li>
@@ -72,7 +72,6 @@
             <!--li><a href="../navbar/">Default</a></li>
             <li><a href="../navbar-static-top/">Static top</a></li-->
             <li class="active"><a href="adminkupi2/index.php">
-               <span class="glyphicon glyphicon-user"></span>
                Panel Kupi2 <span class="sr-only">(current)</span></a>
             </li>
           </ul>
